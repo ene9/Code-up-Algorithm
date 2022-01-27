@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(void) {
+
+    int num;
+    scanf("%d", &num);  // scanf_s -> Visual Studio에서 가능. 기존의 C 문법에서는 scanf가 올바른 함수 이름.
+    printf("%d", num); 
+    
+    return 0;
+}
