@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void){
+
+    unsigned int n;
+    scanf("%u", &n);
+    printf("%u", n);
+    
+    return 0;
+}
+
+
+------------------------------------
+
+int의 범위 : -2147483648 ~ +2147483647
+unsigned int 0 ~ 4,294,967,295
+  -> 서식 지정자 : %u
