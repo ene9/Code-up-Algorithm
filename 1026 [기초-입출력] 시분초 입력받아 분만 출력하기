@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void){
+    int h, m, s;
+    scanf("%d:%d:%d", &h, &m, &s);
+    
+    printf("%d", m);
+    
+    return 0;
+}
+
+
+---------------------------------------
+
+Studio.h로 써서 틀림..ㅋ
+대소문자 주의 !
