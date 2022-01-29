@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void){
+    
+    int n;
+    scanf("%d", &n);
+    printf("%o", n);
+    
+    return 0;
+}
+
+
+---------------------------
+
+%d -> 10진수
+%o -> 8진수
