@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void){
+    
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d", a/b);
+    
+    return 0;
+}
+
+
+-------------------------------
+
+
+int의 범위 : -2,147,483,648 ~ 2,147,483,647
