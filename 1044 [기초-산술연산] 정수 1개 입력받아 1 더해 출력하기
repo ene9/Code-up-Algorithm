@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void){
+    
+    long long int a;
+    scanf("%lld", &a);
+    printf("%lld", ++a);
+    
+    return 0;
+}
+
+
+
+---------------------------------
+
+
+입력되는 정수의 범위가 -2147483648 ~ +2147483647라고 했다. 
+2147283647 + 1 = 2147483648로, int의 범위를 초과한다. (overflow)
