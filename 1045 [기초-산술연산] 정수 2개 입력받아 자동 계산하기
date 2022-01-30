@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(void){
+    
+    int a,b;
+    scanf("%d %d", &a, &b);  // 10 3
+    
+    printf("%d\n", a + b);  // 13
+    printf("%d\n", a - b);  // 7
+    printf("%d\n", a * b);  // 30
+    printf("%d\n", a / b);  // 3
+    printf("%d\n", a % b);  // 1
+    float c, d;
+    c = a;  // 10.00
+    d = b;  // 3.00
+    printf("%.2f\n", c / d);  // 3.33
+    
+    return 0;
+}
+
+
+
+-------------------------------------
+
+
+새로운 실수형 변수를 정의해서 int -> float 형변환을 해주었다.
+형변환을 할 때, 범위가 작은 자료형에서 큰 자료형으로 변환을 해야 data의 손실이 없다.
