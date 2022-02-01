@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void){
+    
+    long long int a, b;
+    scanf("%lld %lld", &a, &b);
+    
+    printf("%d\n", ((a!=b)?1:0) );
+    
+    return 0;
+}
+
+
+--------------------------------------------
+
+
+항상 주의!! 세미콜론을 빠뜨리지 말자 !!!!
