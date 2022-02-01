@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void){
+    
+    int a, b;
+    scanf("%d %d", &a, &b);
+    
+    printf("%d", a<<b);
+    
+    return 0;
+}
+
+
+-----------------------------
+
+
+shift 연산
+shift left : a << b  =>  a * (2의 b승)
