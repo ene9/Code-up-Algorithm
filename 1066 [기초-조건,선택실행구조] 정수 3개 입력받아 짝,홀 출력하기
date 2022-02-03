@@ -31,3 +31,29 @@ int main(void){
 
 
 코드를 보면 같은 코드가 반복된다. -> 코드를 추상화한다. == 함수로 만들기
+
+
+void result(int x);
+
+#include <stdio.h>
+
+int main(void){
+    
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    
+    result(a);
+    result(b);
+    result(c);
+    
+    return 0;
+}
+
+void result(int x){
+    if(x%2==0){
+        printf("even\n");
+    }
+    else{
+        printf("odd\n");
+    }
+}
