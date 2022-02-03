@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main(void){
+    
+    int n;
+    scanf("%d", &n);  // 입력될 정수의 갯수
+    
+    for(int i=0; i<n; i++){
+        int j = 0;
+        scanf("%d", &j);
+        printf("%d\n", j);
+    }
+    
+    return 0;
+}
+
+
+
+------------------------------------------
+
+반복문은 전 문제에서 활용했던 goto문을 이용할 수 있다.
+
+#include <stdio.h>
+
+int main(void){
+    
+    int n;
+    int j;
+    scanf("%d", &n);
+    
+replay:
+    scanf("%d", &j);
+    printf("%d\n", j);
+    n--;
+    if(n != 0){
+        goto replay;
+    }
+    
+    return 0;
+}
+
+여기서 주의해야 할 것은 레이블 안에서는 실행문만 들어갈 수 있고, 선언문은 들어갈 수 없다는 것이다.
+replay 레이블 안에서 int j; 를 적을 수 없다. 그래서 위로 옮겼다. 
+위의 for문을 이용한 풀이에서도 for문 안에서 j를 선언하지 않고, 밖에서 선언한 후에 입력을 반복해서 받으면 된다. 
+입력되는 대로 반복문 밖에서 미리 선언된 j라는 저장 공간의 값이 update 되기 때문이다.
