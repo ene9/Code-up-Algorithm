@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main(void){
+    
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    
+    if(a%2==0){
+        printf("even\n");
+    }
+    else{
+        printf("odd\n");
+    }
+    if(b%2==0){
+        printf("even\n");
+    }
+    else{
+        printf("odd\n");
+    }
+    if(c%2==0){
+        printf("even\n");
+    }
+    else{
+        printf("odd\n");
+    }
+    return 0;
+}
+
+
+-------------------------------------
+
+
+코드를 보면 같은 코드가 반복된다. -> 코드를 추상화한다. == 함수로 만들기
