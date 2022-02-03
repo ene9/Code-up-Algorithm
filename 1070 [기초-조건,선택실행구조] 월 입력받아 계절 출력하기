@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main(void){
+    
+    int m;
+    scanf("%d", &m);
+    
+    switch(m){
+        case 12:
+        case 1:
+        case 2:
+            printf("winter"); break;
+        case 3:
+        case 4:
+        case 5:
+            printf("spring"); break;
+        case 6:
+        case 7:
+        case 8:
+            printf("summer"); break;
+        case 9:
+        case 10:
+        case 11:
+            printf("fall"); break;
+    }
+    return 0;
+}
+
+
+-----------------------------------------
+
+
+switch case 문의 특징인 'break를 쓰지 않으면 다음 case의 실행문까지 모두 실행되는 특징'을 이용한 프로그램이다.
