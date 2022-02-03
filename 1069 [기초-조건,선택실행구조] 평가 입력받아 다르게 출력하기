@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(void){
+    
+    char a;  // 문자를 입력받을 거니까!
+    scanf("%c", &a, 2);
+    
+    switch(a){
+        case 'A': printf("best!!!"); break;
+        case 'B': printf("good!!"); break;
+        case 'C': printf("run!"); break;
+        case 'D': printf("slowly~"); break;
+        default: printf("what?");
+    }
+    
+    return 0;
+}
+
+
+----------------------------------------------------
+
+
+if문을 자주 써서 그런지 switch case문은 쓰려고 할 때마다 헷갈린다...
+제일 중요한 건 각 case 문마다 break 쓰기 !!
+break를 각자 안써주면 해당 case에 해당하는 실행문을 실행하고 그 뒤의 case의 실행문을 전부 실행해 버린다.
+그래서 switch case문에서는 break 쓰는 것을 주의 할 것 !!!!
