@@ -32,10 +32,9 @@ int main(void){
 
 코드를 보면 같은 코드가 반복된다. -> 코드를 추상화한다. == 함수로 만들기
 
+#include <stdio.h>
 
 void result(int x);
-
-#include <stdio.h>
 
 int main(void){
     
