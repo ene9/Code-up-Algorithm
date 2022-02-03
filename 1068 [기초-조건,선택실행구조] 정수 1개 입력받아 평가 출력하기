@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(void){
+    
+    int a;
+    scanf("%d", &a);
+    if(a>=90 && a<=100)
+        printf("A");
+    else if(a>=70)        // a<90 && a>=70
+        printf("B");
+    else if(a>=40)        // a<70 && a>=40
+        printf("C");      
+    else if(a>=0)         // a<40 && a>=0
+        printf("D");
+        
+    return 0;
+}
+
+
+
+------------------------------------------
+
+
+if문은 if, if else, else 순으로 적힌다.
+여기서 if else의 조건은 위의 조건이 성립하지 않을 때, 검사된다.
+그래서 해당 if else의 조건이 참이더라고 위의 조건이 참일 경우, 해당 조건은 검사되지 않는다. 
+반대로 위의 모든 조건들이 거짓일 경우, 해당 조건이 검사된다.
+
