@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void){
+    
+    char x;
+    do{
+        scanf("%c", &x);
+        printf("%c", x);
+    }while(x!='q');
+    
+    return 0;
+}
+
+
+
+---------------------------------
+
+printf("%c\n", x);
+이렇게 쓰니까 표현에러라고 떴다. 
